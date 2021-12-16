@@ -1,6 +1,10 @@
-lista = [1,2,3,4,5,6,7,8,9,10]
-lista[4]= lista[4]*2
-lista[7]= lista[7]*2
-lista[9]= lista[9]*2
-lista2 = (lista[4],lista[7],lista[9])
-print(lista2)
+numeros = [1,2,3,4,5,6,7,8,9,10]
+for i in range(len(numeros)):
+    match(i):
+        case 4:
+            numeros[i] = numeros[i]*2
+        case 7:
+            numeros[i] = numeros[i]*2
+        case 9:
+            numeros[i] = numeros[i]*2
+print(*numeros)
